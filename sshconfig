@@ -1,0 +1,28 @@
+Host srep
+    User git_admin
+    Hostname srep01.groups.local
+    Port 22
+    IdentityFile ~/.ssh/id_rsa
+
+Host sred
+    Hostname sred99
+    User bisconti
+    Port 22
+    IdentityFile ~/.ssh/id_rsa
+
+Host aws
+    Hostname 54.76.124.113 
+    RequestTTY yes
+    User ubuntu
+    Port 22
+    IdentityFile ~/.ssh/veggiemonk
+
+Host kim
+    Hostname 5.135.165.6
+    RequestTTY yes
+    user veggiemonk
+    IdentityFile ~/.ssh/veggiemonk
+
+Host nico
+    Hostname 91.121.170.66
+    Port 22404
