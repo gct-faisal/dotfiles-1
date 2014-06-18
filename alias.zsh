@@ -1,7 +1,7 @@
 alias sl=ls
 alias ea=" $EDITOR $CONFIGDIR/alias.zsh; source $CONFIGDIR/alias.zsh"
 alias ee=" $EDITOR $CONFIGDIR/export.zsh; source $CONFIGDIR/export.zsh"
-alias es=" $EDITOR $CONFIGDIR/sshconfig"
+alias es=" $EDITOR $HOME/.ssh/config;"
 alias ev=" $EDITOR $CONFIGDIR/vim_runtime/my_configs.vim"
 alias ez=" $EDITOR $CONFIGDIR/zshrc; source $CONFIGDIR/zshrc"
 alias g='git'
