@@ -8,15 +8,6 @@ alias g='git'
 alias v='vim'
 alias c='clear'
 
-##############
-### UBUNTU ###
-##############
-
-alias ac="apt-cache search "
-alias acs="apt-cache show "
-alias sai="sudo apt-get install "
-alias sau="sudo apt-get update"
-alias saup="sudo apt-get update && sudo apt-get upgrade"
 
 # List only directories and symbolic
 # links that point to directories
@@ -37,6 +28,21 @@ alias pscpu='ps auxf | sort -nr -k 3'
 alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
 
 alias f="find . -iname "
+
+#############
+#### SSH ####
+#############
+alias sshx='ssh -c arcfour,blowfish-cbc -XC'
+
+##############
+### UBUNTU ###
+##############
+
+alias ac="apt-cache search "
+alias acs="apt-cache show "
+alias sai="sudo apt-get install "
+alias sau="sudo apt-get update"
+alias saup="sudo apt-get update && sudo apt-get upgrade"
 
 ###############
 ####  GIT  ####
