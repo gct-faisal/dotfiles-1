@@ -6,6 +6,7 @@ alias ev=" $EDITOR $CONFIGDIR/vim_runtime/my_configs.vim"
 alias ez=" $EDITOR $CONFIGDIR/zshrc; source $CONFIGDIR/zshrc"
 alias g='git'
 alias v='vim'
+alias svim="sudo vim"
 alias c='clear'
 
 
@@ -53,6 +54,7 @@ alias ga="git add ."
 alias gc="git commit -m "
 alias gca="git commit -am "
 alias gp="git push origin master"
+alias gu="git pull origin master"
 
 
 ##### global aliases
