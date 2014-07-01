@@ -36,7 +36,20 @@ alias f="find . -iname "
 #############
 #### SSH ####
 #############
+
+# X port forwarding with encryption/compression
 alias sshx='ssh -c arcfour,blowfish-cbc -XC'
+
+# Reverse SSH tunneling 
+# ---------------------
+# -R for reverse bind information
+# -g Allows remote hosts to connect to local forwarding ports
+# -N Do not execute a remote command 
+alias sshr='ssh -fN -R 7000:localhost:22 veggiemonk@veggiemonk.info -g'
+
+# Dynamic port (SOCKS) tunneling
+alias sshtd='ssh -D 7001 veggiemonk@veggiemonk.info -N'
+
 
 ##############
 ### UBUNTU ###
