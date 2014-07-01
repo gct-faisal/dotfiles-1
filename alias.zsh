@@ -6,17 +6,9 @@ alias ev=" $EDITOR $CONFIGDIR/vim_runtime/my_configs.vim"
 alias ez=" $EDITOR $CONFIGDIR/zshrc; source $CONFIGDIR/zshrc"
 alias g='git'
 alias v='vim'
+alias svim="sudo vim"
 alias c='clear'
 
-##############
-### UBUNTU ###
-##############
-
-alias ac="apt-cache search "
-alias acs="apt-cache show "
-alias sai="sudo apt-get install "
-alias sau="sudo apt-get update"
-alias saup="sudo apt-get update && sudo apt-get upgrade"
 
 # List only directories and symbolic
 # links that point to directories
@@ -38,6 +30,21 @@ alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
 
 alias f="find . -iname "
 
+#############
+#### SSH ####
+#############
+alias sshx='ssh -c arcfour,blowfish-cbc -XC'
+
+##############
+### UBUNTU ###
+##############
+
+alias ac="apt-cache search "
+alias acs="apt-cache show "
+alias sai="sudo apt-get install "
+alias sau="sudo apt-get update"
+alias saup="sudo apt-get update && sudo apt-get upgrade"
+
 ###############
 ####  GIT  ####
 ###############
@@ -47,6 +54,7 @@ alias ga="git add ."
 alias gc="git commit -m "
 alias gca="git commit -am "
 alias gp="git push origin master"
+alias gu="git pull origin master"
 
 
 ##### global aliases
