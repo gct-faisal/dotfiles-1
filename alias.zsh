@@ -4,10 +4,13 @@ alias ee=" $EDITOR $CONFIGDIR/export.zsh; source $CONFIGDIR/export.zsh"
 alias es=" $EDITOR $HOME/.ssh/config;"
 alias ev=" $EDITOR $CONFIGDIR/vim_runtime/my_configs.vim"
 alias ez=" $EDITOR $CONFIGDIR/zshrc; source $CONFIGDIR/zshrc"
+alias et=" $EDITOR $CONFIGDIR/tmux.conf;"
 alias g='git'
 alias v='vim'
 alias svim="sudo vim"
 alias c='clear'
+alias t='tmux a -t s4t'
+alias tn='tmux new -s s4t'
 
 
 # List only directories and symbolic
