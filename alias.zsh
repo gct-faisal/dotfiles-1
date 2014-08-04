@@ -48,23 +48,52 @@ alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
 alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
 alias f="find . -iname "
 
+
+## MOUNT windows shared disk
+alias mwsd="sudo mount -t cifs -o username=bisconti,domain=INTERDOM,uid=1000,gid=1000 //sdev06/SE2000/ /media/se2000 "
+
+
+##############
+#### TMUX ####
+##############
+
+alias ta='tmux attach -t'
+alias ts='tmux new-session -s'
+alias tl='tmux list-sessions'
+
+
 #############
 #### SSH ####
 #############
 
 # X port forwarding with encryption/compression
-alias sshx='ssh -c arcfour,blowfish-cbc -XC'
+alias sshx="ssh -c arcfour,blowfish-cbc -XC"
 
 # Reverse SSH tunneling 
 # ---------------------
 # -R for reverse bind information
 # -g Allows remote hosts to connect to local forwarding ports
 # -N Do not execute a remote command 
-alias sshr='ssh -fN -R 7000:localhost:22 veggiemonk@veggiemonk.info -g'
+alias sshr="ssh -fN -R 7000:localhost:22 veggiemonk@veggiemonk.info -g"
 
 # Dynamic port (SOCKS) tunneling
-alias sshtd='ssh -D 7001 veggiemonk@veggiemonk.info -N'
+alias sshtd="ssh -D 7001 veggiemonk@veggiemonk.info -N"
 
+
+##############
+### DOCKER ###
+##############
+
+alias dps="docker ps"
+alias dpsa="docker ps -a"
+alias dim="docker images"
+alias dil="docker images | grep latest"
+alias drm="docker rm $(docker ps -a -q)"
+alias drmi="docker rmi $(docker images -q)"
+
+# IMAGES
+
+alias couchdb="docker run -d -p 5984:5984 -e COUCHDB_PASS='couchdb' tutum/couchdb"
 
 ##############
 ### UBUNTU ###
