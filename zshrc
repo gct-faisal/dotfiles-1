@@ -95,3 +95,5 @@ export LC_ALL=en_US.UTF-8
 #export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
