@@ -48,6 +48,8 @@ alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
 alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
 alias f="find . -iname "
 
+# List open port
+alias ports='netstat -tulanp'
 
 ## MOUNT windows shared disk
 alias mwsd="sudo mount -t cifs -o username=bisconti,domain=INTERDOM,uid=1000,gid=1000 //sdev06/SE2000/ /media/se2000 "
@@ -79,6 +81,16 @@ alias sshr="ssh -fN -R 7000:localhost:22 veggiemonk@veggiemonk.info -g"
 # Dynamic port (SOCKS) tunneling
 alias sshtd="ssh -D 7001 veggiemonk@veggiemonk.info -N"
 
+
+##############
+###  CURL  ###
+##############
+
+alias cx="curl -X "
+alias cxg="curl -X GET "
+alias cxc="curl -X PUT "
+alias cxu="curl -X POST "
+alias cxd="curl -X DELETE "
 
 ##############
 ### DOCKER ###
