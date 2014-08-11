@@ -92,6 +92,15 @@ alias cxc="curl -X PUT "
 alias cxu="curl -X POST "
 alias cxd="curl -X DELETE "
 
+
+##############
+### SERVER ###
+##############
+
+alias server="python -m SimpleHTTPServer "
+
+
+
 ##############
 ### DOCKER ###
 ##############
