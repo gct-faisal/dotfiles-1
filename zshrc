@@ -69,6 +69,8 @@ GIT_AUTHOR_EMAIL="julien.bisconti@gmail.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 
+
+
 #HISTFILE=~/.zshhistory
 #HISTSIZE=
 #SAVEHIST=
@@ -76,10 +78,6 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 # into a history by preceding them with at least one space
 setopt hist_ignore_space
 
-
-# You may need to manually set your language environment
-export LANGUAGE=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -94,6 +92,3 @@ export LC_ALL=en_US.UTF-8
 # ssh
 #export SSH_KEY_PATH="~/.ssh/id_rsa"
 
-
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

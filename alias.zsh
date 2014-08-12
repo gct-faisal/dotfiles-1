@@ -149,11 +149,15 @@ alias ....='cd ../../../'
 alias .....='cd ../../../../'
 
 # Command line head / tail shortcuts
+# http://rayninfo.co.uk/tips/zshtips.html
 alias -g H='| head'
 alias -g T='| tail'
-alias -g G='| grep'
+#alias -g G='| grep'
+alias -g G='| grep -'
 alias -g L="| less"
 alias -g M="| most"
+alias -g C='| wc -l'
+
 alias -g LL="2>&1 | less"
 alias -g CA="2>&1 | cat -A"
 alias -g NE="2> /dev/null"
@@ -161,16 +165,9 @@ alias -g NUL="> /dev/null 2>&1"
 alias -g P="2>&1| pygmentize -l pytb"
 
 # zsh buch s.82 (z.B. find / ... NE)
-alias -g NE='2>|/dev/null'
+#alias -g NE='2>|/dev/null'
 alias -g NO='&>|/dev/null'
 
-# http://rayninfo.co.uk/tips/zshtips.html
-alias -g G='| grep -'
-alias -g P='2>&1 | $PAGER'
-alias -g L='| less'
-alias -g LA='2>&1 | less'
-alias -g M='| most'
-alias -g C='| wc -l'
 
 # Make zsh know about hosts already accessed by SSH
 zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
