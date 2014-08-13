@@ -69,7 +69,11 @@ GIT_AUTHOR_EMAIL="julien.bisconti@gmail.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 
+#####
+#### TEAMOCIL COMPLETION
+#####
 
+compctl -g '~/.teamocil/*(:t:r)' teamocil
 
 #HISTFILE=~/.zshhistory
 #HISTSIZE=
@@ -91,4 +95,5 @@ setopt hist_ignore_space
 
 # ssh
 #export SSH_KEY_PATH="~/.ssh/id_rsa"
+
 
