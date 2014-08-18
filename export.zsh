@@ -5,8 +5,10 @@ export LANG=en_US.UTF-8
 ### JAVA
 export JAVA_HOME=/usr/lib/jvm/java-7-oracle
 export JRE_HOME=/usr/lib/jvm/java-7-oracle/jre
-export M2_HOME=/usr/share/maven
+#export M2_HOME=/usr/share/maven
+export M2_HOME=/usr/local/apache-maven/apache-maven-3.1.1
 export M2=$HOME/.m2
+export PATH=$M2:$PATH
 #export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 #export JRE_HOME=/usr/lib/jvm/java-8-oracle/jre
 
