@@ -54,7 +54,7 @@ source $ZSH/oh-my-zsh.sh
 
 source $CONFIGDIR/alias.zsh
 source $CONFIGDIR/export.zsh
-source $CONFIGDIR/automount.zsh
+#source $CONFIGDIR/automount.zsh
 
 # User configuration
 
