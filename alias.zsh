@@ -23,6 +23,8 @@ alias p='ps -f'
 alias sortnr='sort -n -r'
 alias unexport='unset'
 
+alias fuck='sudo $(fc -ln -1)'
+
 alias whereami=display_info
 
 alias sl=ls
