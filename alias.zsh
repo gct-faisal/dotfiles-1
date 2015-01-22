@@ -18,7 +18,7 @@ alias ff='find . -type f -name'
 alias h='history'
 alias hgrep="fc -El 0 | grep"
 alias help='man'
-alias j='jobs'
+#alias j='jobs'
 alias p='ps -f'
 alias sortnr='sort -n -r'
 alias unexport='unset'
@@ -53,9 +53,17 @@ alias f="find . -iname "
 # List open port
 alias ports='netstat -tulanp'
 
-## MOUNT windows shared disk
-alias mwsd="sudo mount -t cifs -o username=bisconti,domain=INTERDOM,uid=1000,gid=1000 //sdev06/SE2000/ /media/se2000 "
+# Redis Commander
+alias redisc='sudo redis-commander --redis-port 6379 --redis-host localhost | NO '
 
+## MOUNT windows shared disk
+alias automount="source $CONFIGDIR/autoumount.zsh"
+alias mwsd="sudo mount -t cifs -o username=bisconti,domain=INTERDOM,uid=1000,gid=1000 //sdev06/SE2000/ /media/se2000 "
+alias mpub="sudo mount -t cifs -o username=bisconti,domain=INTERDOM,uid=1000,gid=1000 //sdev06.groups.local/iwwwroot$ /media/pub"
+alias mtrans="sudo mount -t vboxsf TRANSIT /media/transit "
+
+#### SUPER CUSTOM ####
+alias tpubit="tree /media/pub/Presta-Web/iTransfer/"
 
 ##############
 #### TMUX ####
@@ -101,14 +109,14 @@ alias cxd="curl -X DELETE "
 
 alias server="python -m SimpleHTTPServer "
 
-
+alias zut='sudo $(fc -ln -1)'
 
 ##############
 ### DOCKER ###
 ##############
-
-alias dps="docker ps"
-alias dpsa="docker ps -a"
+#http://csaba.palfi.me/random-docker-tips/
+alias dps="docker ps | less -S"
+alias dpsa="docker ps -a | less -S"
 alias dim="docker images"
 alias dil="docker images | grep latest"
 alias drm="docker rm $(docker ps -a -q)"
@@ -116,7 +124,8 @@ alias drmi="docker rmi $(docker images -q)"
 
 # IMAGES
 
-alias couchdb="docker run -d -p 5984:5984 -e COUCHDB_PASS='couchdb' tutum/couchdb"
+alias couchdb="docker run -d -p 5984:5984 -e COUCHDB_PASS='groups' tutum/couchdb"
+alias redisdb="docker run -d -p 6379:6379 -e REDIS_PASS='groups' tutum/redis"
 
 ##############
 ### UBUNTU ###
@@ -125,9 +134,12 @@ alias couchdb="docker run -d -p 5984:5984 -e COUCHDB_PASS='couchdb' tutum/couchd
 alias ac="apt-cache search "
 alias acs="apt-cache show "
 alias sai="sudo apt-get install "
+alias sair="sudo apt-get install --reinstall"
 alias sau="sudo apt-get update"
 alias sap="sudo apt-get upgrade"
 alias saup="sudo apt-get update && sudo apt-get upgrade"
+
+alias updatevb="sudo apt-get install --reinstall virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11"
 
 ###############
 ####  GIT  ####
@@ -137,8 +149,8 @@ alias gst="git status"
 alias ga="git add ."
 alias gc="git commit -m "
 alias gca="git commit -am "
-alias gp="git push origin master"
-alias gu="git pull origin master"
+alias gp="git push"
+alias gu="git pull"
 
 
 ##### global aliases
@@ -155,7 +167,7 @@ alias .....='cd ../../../../'
 alias -g H='| head'
 alias -g T='| tail'
 #alias -g G='| grep'
-alias -g G='| grep -'
+alias -g G='| grep '
 alias -g L="| less"
 alias -g M="| most"
 alias -g C='| wc -l'

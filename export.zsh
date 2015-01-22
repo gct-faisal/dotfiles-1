@@ -2,15 +2,21 @@ export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+
 ### JAVA
-export JAVA_HOME=/usr/lib/jvm/java-7-oracle
-export JRE_HOME=/usr/lib/jvm/java-7-oracle/jre
+#export JAVA_HOME=/usr/lib/jvm/java-7-oracle
+#export JRE_HOME=/usr/lib/jvm/java-7-oracle/jre
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+export JRE_HOME=/usr/lib/jvm/java-8-oracle/jre
 #export M2_HOME=/usr/share/maven
-export M2_HOME=/usr/local/apache-maven/apache-maven-3.1.1
+export M2_HOME=/usr/local/apache-maven
 export M2=$HOME/.m2
+export M3_HOME=/usr/local/apache-maven
+export M3=$HOME/.m2
 export PATH=$M2:$PATH
-#export JAVA_HOME=/usr/lib/jvm/java-8-oracle
-#export JRE_HOME=/usr/lib/jvm/java-8-oracle/jre
+
+### TOMCAT
+export CATALINA_HOME=/opt/apache-tomcat-8.0.14
 
 ### ECLIPSE
 export ECLIPSE_HOME=$HOME/bin/eclipse
@@ -25,6 +31,8 @@ export PATH=$PATH:$ORACLE_HOME/bin
 export GOROOT=$HOME/bin/golang
 export GOPATH=$HOME/code/gocode
 
+### JS
+#export SLIMERJSLAUNCHER=/usr/bin/firefox
 
 ### RUBY GEM
 #export GEM_HOME=$HOME/.gem
