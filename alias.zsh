@@ -61,7 +61,7 @@ alias mpub="sudo mount -t cifs -o username=bisconti,domain=INTERDOM,uid=1000,gid
 alias mtrans="sudo mount -t vboxsf TRANSIT /media/transit "
 
 #### SUPER CUSTOM ####
-alias tpubit="tree /media/pub/Presta-Web/iTransfer/"
+alias tpub="tree -L 3 /media/pub/Presta-Web/"
 
 ##############
 #### TMUX ####
