@@ -48,7 +48,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(python autojump history history-substring-search vim-interaction debian encode64 python git git-extras pip sudo docker bower mvn node npm vagrant golang github jump mvn sysadmin zsh_reload tmux colored-man zsh-syntax-highlighting k )
+plugins=(ubuntu python autojump history history-substring-search vim-interaction debian encode64 python git git-extras pip sudo docker bower mvn node npm vagrant golang github jump mvn sysadmin zsh_reload tmux colored-man zsh-syntax-highlighting k grunt)
 
 source $ZSH/oh-my-zsh.sh
 

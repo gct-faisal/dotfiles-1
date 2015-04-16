@@ -47,3 +47,4 @@ export GOPATH=$HOME/code/gocode
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
