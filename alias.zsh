@@ -68,8 +68,6 @@ alias tpub="tree -L 3 /media/pub/Presta-Web/"
 alias tsrv="tree /media/srv/PrestaWeb/QA/"
 alias gtb="grunt --tag build --latest"
 alias gdv="grunt deploy-dev"
-alias gpom="git push origin master"
-alias gcm="git commit -m "
 
 ##############
 #### TMUX ####
@@ -153,10 +151,10 @@ alias updatevb="sudo apt-get install --reinstall virtualbox-guest-dkms virtualbo
 
 alias gst="git status"
 alias ga="git add ."
-alias gc="git commit -m "
-alias gca="git commit -am "
 alias gp="git push"
 alias gu="git pull"
+alias gpom="git push origin master"
+alias gcm="git commit -am "
 
 
 ##### global aliases

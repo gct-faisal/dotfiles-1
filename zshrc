@@ -73,7 +73,7 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 #### TEAMOCIL COMPLETION
 #####
 
-compctl -g '~/.teamocil/*(:t:r)' teamocil
+#compctl -g '~/.teamocil/*(:t:r)' teamocil
 
 #HISTFILE=~/.zshhistory
 #HISTSIZE=
