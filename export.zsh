@@ -40,6 +40,9 @@ export GOPATH=$HOME/code/gocode
 #eval "$(rbenv init -)"
 #export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
+### CUSTOM FOLDER
+export SRVC="/media/srv/PrestaWeb/QA/Client/"
+export SRVS="/media/srv/PrestaWeb/QA/Server/"
 
 #-------------------------------#
 #------------- PATH ------------#
