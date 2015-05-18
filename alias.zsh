@@ -65,7 +65,7 @@ alias mtrans="sudo mount -t vboxsf TRANSIT /media/transit "
 
 #### SUPER CUSTOM ####
 alias tpub="tree -L 3 /media/pub/Presta-Web/"
-alias tsrv="tree /media/srv/PrestaWeb/QA/"
+alias tsrv="tree /media/deploy/"
 alias gtb="grunt --tag build --latest"
 alias gdv="grunt deploy-dev"
 

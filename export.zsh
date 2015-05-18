@@ -28,8 +28,8 @@ export TNS_ADMIN=${ORACLE_HOME}
 export PATH=$PATH:$ORACLE_HOME/bin
 
 ###  GO
-export GOROOT=$HOME/bin/golang
-export GOPATH=$HOME/code/gocode
+#export GOROOT=$HOME/bin/golang
+#export GOPATH=$HOME/code/gocode
 
 ### JS
 #export SLIMERJSLAUNCHER=/usr/bin/firefox
@@ -48,6 +48,6 @@ export SRVS="/media/srv/PrestaWeb/QA/Server/"
 #------------- PATH ------------#
 #-------------------------------#
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
+#export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
