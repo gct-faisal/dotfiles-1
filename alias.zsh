@@ -14,6 +14,8 @@ alias dud='du -d 1 -h'
 alias duf='du -sh *'
 alias fd='find . -type d -name'
 alias ff='find . -type f -name'
+alias f="find . -iname "
+alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
 
 alias h='history'
 alias hgrep="fc -El 0 | grep"
@@ -23,6 +25,9 @@ alias p='ps -f'
 alias sortnr='sort -n -r'
 alias unexport='unset'
 
+#
+## My all time favorite
+#
 alias fuck='sudo $(fc -ln -1)'
 
 alias whereami=display_info
@@ -45,10 +50,6 @@ alias psmem10='ps auxf | sort -nr -k 4 | head -10'
 ## get top process eating cpu ##
 alias pscpu='ps auxf | sort -nr -k 3'
 alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
-
-
-alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
-alias f="find . -iname "
 
 # List open port
 alias ports='netstat -tulanp'
@@ -92,10 +93,10 @@ alias sshx="ssh -c arcfour,blowfish-cbc -XC"
 # -R for reverse bind information
 # -g Allows remote hosts to connect to local forwarding ports
 # -N Do not execute a remote command 
-alias sshr="ssh -fN -R 7000:localhost:22 veggiemonk@veggiemonk.info -g"
+alias sshr="ssh -fN -R 7000:localhost:22 veggiemonk@veggiemonk.ovh -g"
 
 # Dynamic port (SOCKS) tunneling
-alias sshtd="ssh -D 7001 veggiemonk@veggiemonk.info -N"
+alias sshtd="ssh -D 7001 veggiemonk@veggiemonk.ovh -N"
 
 
 ##############
