@@ -66,8 +66,10 @@ alias mtrans="sudo mount -t vboxsf TRANSIT /media/transit "
 #### SUPER CUSTOM ####
 alias tpub="tree -L 3 /media/pub/Presta-Web/"
 alias tsrv="tree /media/deploy/"
-alias gtb="grunt --tag build --latest"
+alias gtb="grunt --tag=build --latest"
 alias gdv="grunt deploy-dev"
+alias glb="grunt light  --local --deploy --latest --env=dev"
+alias gdep="gtb && glb"
 
 ##############
 #### TMUX ####
@@ -119,12 +121,14 @@ alias zut='sudo $(fc -ln -1)'
 ### DOCKER ###
 ##############
 #http://csaba.palfi.me/random-docker-tips/
-alias dps="docker ps | less -S"
-alias dpsa="docker ps -a | less -S"
+alias dps="docker ps "
+alias dpsa="docker ps -a "
 alias dim="docker images"
 alias dil="docker images | grep latest"
 alias drm="docker rm $(docker ps -a -q)"
 alias drmi="docker rmi $(docker images -q)"
+
+alias dport="docker inspect -f '{{range $p, $conf := .NetworkSettings.Ports}} {{$p}} -> {{(index $conf 0).HostPort}} {{end}}' "
 
 # IMAGES
 
