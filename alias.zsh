@@ -57,16 +57,20 @@ alias ports='netstat -tulanp'
 # Redis Commander
 alias redisc='sudo redis-commander --redis-port 6379 --redis-host localhost | NO '
 
+# FUN
+alias whatthecommit="curl -s whatthecommit.com/index.txt"
+
 ## MOUNT windows shared disk
 alias automount="source $CONFIGDIR/autoumount.zsh"
-alias mwsd="sudo mount -t cifs -o username=bisconti,domain=INTERDOM,uid=1000,gid=1000 //sdev06/SE2000/ /media/se2000 "
-alias mpub="sudo mount -t cifs -o username=bisconti,domain=INTERDOM,uid=1000,gid=1000 //sdev06.groups.local/iwwwroot$ /media/pub"
-alias msrv="sudo mount -t cifs -o username=bisconti,domain=INTERDOM,uid=1000,gid=1000 //sman03.groups.local/mobileapps /media/srv"
+#alias mwsd="sudo mount -t cifs -o username=bisconti,domain=INTERDOM,uid=1000,gid=1000 //sdev06/SE2000/ /media/se2000 "
+#alias mpub="sudo mount -t cifs -o username=bisconti,domain=INTERDOM,uid=1000,gid=1000 //sdev06.groups.local/iwwwroot$ /media/pub"
+#alias msrv="sudo mount -t cifs -o username=bisconti,domain=INTERDOM,uid=1000,gid=1000 //sman03.groups.local/mobileapps /media/srv"
 alias mtrans="sudo mount -t vboxsf TRANSIT /media/transit "
 
 #### SUPER CUSTOM ####
 alias tpub="tree -L 3 /media/pub/Presta-Web/"
 alias tsrv="tree /media/deploy/"
+alias ldep="tsrv G -B 1 zip"
 alias gtb="grunt --tag=build --latest"
 alias gdv="grunt deploy-dev"
 alias glb="grunt light  --local --deploy --latest --env=dev"
