@@ -53,6 +53,8 @@ plugins+=(debian encode64 python git git-extras pip sudo docker bower mvn node n
 plugins+=(vagrant golang github jump mvn sysadmin zsh_reload tmux colored-man)
 plugins+=(zsh-syntax-highlighting k grunt alias-tips)
 
+#TODO: set platform with $(uname) so that zshrc is compatible osx and linux
+
 source $ZSH/oh-my-zsh.sh
 
 source $CONFIGDIR/alias.zsh
@@ -79,8 +81,8 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 #compctl -g '~/.teamocil/*(:t:r)' teamocil
 
-#HISTFILE=~/.zshhistory
-#HISTSIZE=
+HISTFILE=~/.zshhistory
+HISTSIZE=100000
 #SAVEHIST=
 # prevent particular entries from being recorded 
 # into a history by preceding them with at least one space
